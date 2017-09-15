@@ -65,3 +65,4 @@
     - fail: msg="db failed to return content"
       when: "'Database Connected from {{item.item}}!' not in item.content"
       with_items: "{{app_db.results}}"
+
